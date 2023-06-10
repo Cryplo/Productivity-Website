@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="index.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>  
+        <title>Productivity Website</title>
+    </head>
+    <body onload = "onLoad()">
+        <!--<header>
+            <h1>Productivity Website</h1>
+        </header>-->
+        <div id = "topNav">
+            <div id = "themeContainer" class = "navListContainer">
+                <div id = "themeList" class = "hideNav">
+                    <input type="button" id="" class = "themeChoice" value="Pistachio"><br>
+                    <input type="button" id="" class = "themeChoice" value="Rose"><br>
+                    <input type="button" id="" class = "themeChoice" value="Ice"><br>
+                    <input type="button" id="" class = "themeChoice" value="Aqua">
+                </div>
+                <input type="button" id="themeButton" class = "navButton" value = "Themes">
+            </div>
+            <div id = "addWidgetContainer" class = "navListContainer">
+                <div id = "widgetList" class = "hideNav">
+                    <input type="button" id="" class = "widgetChoice" value="To-Do List"><br>
+                    <input type="button" id="" class = "widgetChoice" value="Notes"><br>
+                    <input type="button" id="" class = "widgetChoice" value="Timer">
+                </div>
+                <input type="button" id="addWidgetButton" class = "navButton" value = "Add Widget">
+            </div>
+            <div id = "removeWidgetContainer" class = "navListContainer">
+                <div id = "removeWidgetList" class = "hideNav">
+                </div>
+                <input type="button" id="removeWidgetButton" class = "navButton" value = "Remove Widget">
+            </div>
+            <div id = "saveContainer" class = "navListContainer">
+                <input type="button" id="saveButton" class = "navButton" value = "Save">
+            </div>
+        </div>
+        <!--<div class = "gradient"></div>-->
+        <!--<div class = "widgetContainer taskWidget" data-widget-id = "0">
+            <input type="button" class = "toggleButton" value = "-">
+            <div class = "taskListContainer widgetBodyContainer">
+                <input type="button" class = "taskButton addTask" value="Add">
+                <input type="button" class = "taskButton removeTask" value="Remove">
+                <div class = "taskList">
+                    <input type="checkbox" id="task1" class="taskCheckbox" value="task1">
+                    <label contenteditable="true" class="taskLabel">New Task</label><br>
+                </div>
+            </div>-->
+        <!--<div class = "widgetContainer notesWidget" data-widget-id = "0">
+            <input type="button" class = "toggleButton" value = "-">
+            <div class = "notesContainer widgetBodyContainer">
+                <div class = "notes">
+                    <textarea class = "noteBox" rows="5">New Note</textarea>
+                </div>
+            </div>
+        </div>-->
+        <!--<div class = "widgetContainer timerWidget" data-widget-id = "0">
+            <input type="button" class = "toggleButton" value = "-">
+            <div class = "timerContainer widgetBodyContainer">
+                <div class = "timer">
+                    
+                </div>
+                <br>
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                Set, Run/Stop, Reset, Current
+                <input type = "text" class = "timer" data-original-time="10" data-current-time = "10" data-state = "play" readonly
+                ><input type="button" class = "resetButton timerButton" value = "Reset"
+                ><input type="button" class = "playPauseButton timerButton" value = "Pause"
+                ><input type="button" class = "setButton timerButton" value = "Set">
+            </div>
+        </div>
+        <div class = "widgetContainer timerWidget" data-widget-id = "1">
+            <input type="button" class = "toggleButton" value = "-">
+            <div class = "timerContainer widgetBodyContainer">
+                <div class = "timer">
+                    
+                </div>
+                <br>
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                <input type="text" class = "timerSetValue timerInput" value = "25">
+                Set, Run/Stop, Reset, Current
+                <input type = "text" class = "timer" data-original-time="10" data-current-time = "10" data-state = "play" readonly
+                ><input type="button" class = "resetButton timerButton" value = "Reset"
+                ><input type="button" class = "playPauseButton timerButton" value = "Pause"
+                ><input type="button" class = "setButton timerButton" value = "Set">
+            </div>
+        </div>-->
+    </body>
+</html>

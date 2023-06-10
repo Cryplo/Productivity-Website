@@ -1,0 +1,8 @@
+Website Color Scheme: https://colorhunt.co/palette/070a52d21312ed2b2af15a59
+
+https://htmldom.dev/drag-and-drop-element-in-a-list/
+
+cookies:
+type of widget
+position of widget
+if task list

@@ -1,0 +1,446 @@
+:root{
+    /*2s
+    ORIGINAL
+    --background:rgb(234, 239, 189);
+    --foreground:rgb(144, 190, 109);
+    GRAY THEME
+    --background:rgb(191, 191, 191); 
+    --foreground:rgb(83, 83, 83);
+    BLUISH-GREENISH
+    --background:rgb(156, 215, 200); 
+    --foreground:rgb(17, 172, 133);
+    WARM PINK
+    --background:rgb(255, 243, 226); 
+    --foreground:rgb(250, 152, 132);
+    */
+    /*3s
+    Pistachio
+    --background:rgb(250, 255, 208);
+    --foreground:rgb(144, 190, 109);
+    --third:rgb(248, 255, 184);
+    Rose
+    --background: rgb(255, 243, 226);
+    --foreground: rgb(250, 132, 132);
+    --third: rgb(255, 234, 234);
+    Ice
+    --background:rgb(227, 253, 253); 
+    --foreground:rgb(113, 201, 206);
+    --third:rgb(255, 255, 255);
+    */
+    /*experimental purple
+    --background:rgb(44, 0, 46); 
+    --foreground:rgb(255, 110, 240);
+    --third:rgb(255, 255, 255);*/
+    /*experimental gray--background:rgb(0, 0, 0); 
+    --foreground:rgb(103, 103, 103);
+    --third:rgb(203, 203, 203);
+    --bg:url();*/
+    /*--background:rgb(250, 255, 208);
+    --foreground:rgb(144, 190, 109);
+    --third:rgb(248, 255, 184);*/
+
+    /*AQUA*/
+    /*--background:rgb(7, 0, 106);
+    --foreground:rgb(109, 187, 225);
+    --third:rgb(13, 65, 113);*/
+    --background:rgb(250, 255, 208);
+    --foreground:rgb(144, 190, 109);
+    --third:rgb(248, 255, 184);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    left:-110px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--third); 
+    border-radius: 10px;
+}
+
+*{
+    transition:color 500ms;
+    transition:background-color 500ms;
+    font-family:monospace;
+}
+
+body{
+    background-color: var(--background);
+    background-image:var(--bg);
+    margin:0px;
+}
+header{
+    text-align: center; 
+}
+h1{
+    color: var(--foreground);
+    font-size: 64px;
+}
+#topNav{
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+    height: 40px;
+    padding:0px 0px 0px 0px;
+    border:none;
+    background-color:var(--foreground);
+    transition: 1s;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+/*
+.navButton{
+    color:var(--foreground);
+    border:none;
+    background-color: var(--background);
+    width: 110px;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    vertical-align:middle;
+}*/
+.navListContainer{
+    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    display:inline-block;
+    vertical-align:top;
+}
+.navButton{
+    color:var(--foreground);
+    background-color: var(--third);
+    width: 160px;
+    height: 20px;
+    margin-top:0px;
+    margin-bottom:auto;
+    padding:0px 0px 0px 0px;
+    border:none;
+    transition: 500ms;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    transition: 500ms;
+    /*border-color:black;
+    border-style:solid;    */ 
+}
+
+.navButton:hover{
+    height:40px;
+}
+#topNav:hover{
+    height:80px;
+}
+.themeChoice{
+    color:var(--foreground);
+    background-color: var(--third);
+    width: 160px;
+    height: 20px;
+    transition: 500ms;
+    margin: 0px 0px 0px 0px;
+    border-color:black;
+    border-style:none;
+}
+.widgetChoice{
+    color:var(--foreground);
+    background-color: var(--third);
+    width: 160px;
+    height: 20px;
+    transition: 500ms;
+    margin: 0px 0px 0px 0px;    
+    padding: 0px 0px 0px 0px;
+    border-color:black;
+    border-style:none;
+}
+.removeWidgetChoice{
+    color:var(--foreground);
+    background-color: var(--third);
+    width: 160px;
+    height: 20px;
+    transition: 500ms;
+    margin: 0px 0px 0px 0px;    
+    padding: 0px 0px 0px 0px;
+    border-color:black;
+    border-style:none;
+}
+.themeChoice:hover{
+    height:40px;
+}
+.widgetChoice:hover{
+    height:40px;
+}
+.removeWidgetChoice:hover{
+    height:40px;
+}
+.taskList{
+    font-size: 32px;
+    margin: 0px 0px 0px 0px;
+}
+.widgetContainer{
+    position:absolute;
+    /*left:50%;*/
+    /*transform:translate(-50%, 0%);*/
+    padding: 0px 0px 0px 0px;
+    border: 5px solid rgba(0, 0, 0, 0);
+}
+.widgetBodyContainer{
+    float:left;
+}
+/*
+.taskCheckbox{
+    margin-right: 20px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width:40px;
+    height:40px;
+    padding: 0px;
+}*/
+.taskCheckbox{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to left, white, white);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    border: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    vertical-align: top;
+    /*margin-bottom: 50px;*/
+    transition: background-size 250ms;
+    transition-timing-function: ease-in;
+}
+.timer{
+    width: 110px;
+    height: 40px;
+    display:inline-block;
+    border-radius:20px;
+    background-color:var(--foreground);
+    color:var(--background);
+    vertical-align:top;
+    text-align:center;
+    font-size:32px;
+    padding:0px 0px 0px 0px;
+    border:none;
+    margin: 0px 5px 0px 0px;
+}
+
+.timer::selection{
+    text-decoration:underline;
+}
+
+.timer:focus{
+    outline:none;
+}
+
+.timerInput{
+    background-color:var(--foreground);
+    color: var(--background);
+    margin: 5px 0px 5px 0px;
+    width: 76px;
+    height: 40px;
+    border-radius: 20px;
+    align-items:center;
+    justify-content: space-between;
+    border:none;
+}
+
+.timerInput::selection{
+    text-decoration: underline;
+}
+.timerInput:focus{
+    outline: none;
+}
+
+.taskCheckbox:checked {
+    /*background-color: rgb(144, 190, 109);*/
+    background-size: 0% 100%;
+}
+.taskInput{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    max-height: 40px;
+    /*min-width: 140px;*/
+    max-width: 270px;
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: none;
+    white-space: nowrap;
+    vertical-align:middle; 
+    border:none;
+    background-color: var(--foreground);
+    color:var(--background);
+    font-size: 32px;    
+    justify-content:center;
+    position: absolute;
+    white-space: nowrap;
+    transition: 1s;
+}
+.noteBox{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    border-radius:20px;
+    /*max-height: 40px;*/
+    /*min-width: 140px;*/
+    width: 363px;
+    display:inline-block;
+    text-overflow: none;
+    white-space: pre-wrap;
+    vertical-align:middle; 
+    border:none;
+    background-color: var(--foreground);
+    color:var(--background);
+    font-size: 32px;    
+    justify-content:center;
+    position: absolute;
+    transition: 1s;
+    resize:none;
+}
+.noteBox::selection{
+    text-decoration: underline;
+}
+.noteBox:focus{
+    outline: none;
+}
+.notes{
+    width:383px;
+    height:207px;
+}
+.taskInput::selection{
+    text-decoration: underline;
+}
+.taskInput:focus{
+    outline: none;
+}
+.taskButton{
+    color:var(--background);
+    border:none;
+    background-color: var(--foreground);
+    width: 110px;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.addTask{
+    margin: 0px 0px 0px 0px;
+}
+.removeTask{
+    margin: 0px 0px 0px 2px;
+}
+#saveTask{
+    margin: 0px 0px 0px 2px;
+}
+.draggable{
+    background-color:var(--foreground);
+    color: var(--background);
+    margin: 5px 0px 5px 0px;
+    width: 343px;
+    height: 40px;
+    border-radius: 20px;
+    align-items:center;
+    justify-content: space-between;
+    /*transition: ease-out 800ms;
+    float: right;*/
+    /*position:relative;
+    overflow:hidden;*/
+}
+.toggleButton{
+    float:left;
+    margin: 0px 5px 0px 0px;
+    color:var(--background);
+    border:none;
+    background-color: var(--foreground);
+    width: 40px;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.timerButton{
+    color:var(--background);
+    border:none;
+    background-color: var(--foreground);
+    width: 73px;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    font-size: 16px;
+    vertical-align:top;
+    margin: 0px 5px 0px 0px;
+}
+.hideWidget{
+    transform-origin: 0% 100%;
+    animation: hideWidget 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes hideWidget{
+    from{transform:scale(1);}    
+    to{transform:scale(0, 1)}
+}
+.showWidget{
+    transform-origin: 0% 100%;
+    animation: showWidget 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes showWidget{
+    from{transform:scale(0, 1);} 
+    to{transform:scale(1)}
+}
+.hideNav{
+    transform-origin: 0% 0%;
+    animation: hideNav 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes hideNav{
+    from{transform:scale(1); height:100%;}    
+    to{transform:scale(1, 0); height:0%;}
+}
+.showNav{
+    transform-origin: 0% 0%;
+    animation: showNav 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes showNav{
+    from{transform:scale(1, 0); height:0%;}
+    to{transform:scale(1); height:100%;}
+}
+/*.taskContainer:hover .taskInput{
+    transform: translateX(calc((200px - 100%) * -1));
+}*/
+
+/*.taskContainer:hover .draggable{
+    width: 430px;
+}
+.taskContainer:hover .draggable .taskInput{
+    max-width: 250px;
+}*/
+/*
+.draggable:hover:not(focus){
+    transform: scale(1.1);
+}
+#addTask:hover{
+    transform: scale(1.1);
+}
+#removeTask:hover{
+    transform: scale(1.1);
+}*/
